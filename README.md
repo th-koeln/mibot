@@ -212,3 +212,18 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
+## Environment variables needed for the custom scripts
+
+| Variable          | Description           | Example value                            |
+| ----------------- | --------------------- | ---------------------------------------- |
+| ADVM1_USER        | GMID                  | mi(:num)                                 |
+| ADVM1_PASS        | GMID password         | incorrect                                |
+|                   |                       |                                          |
+| CALDAV_USER       | GMID                  | mi(:num)                                 |
+| CALDAV_PASS       | GMID password         | incorrect                                |
+| CALDAV_URL        |                       | https://advcloud.gm.fh-koeln.de/remote.php/caldav/calendars/(:gmid)/(:kalendarname) |
+|                   |                       |                                          |
+| HEROKU_URL        |                       | https://(:app-name).herokuapp.com        |
+| HUBOT_SLACK_TOKEN | Token issued by Slack | xoxb-...                                 |
+| TZ                | Timezone              | Europe/Berlin                            |
